@@ -1,0 +1,11 @@
+// Event listener for example button
+onEvent("exampleButton", "click", function() {
+  filterData(1000);
+});
+
+
+// Event listener for submit button
+onEvent("submit", "click", function() {
+  filterData(getText("textInput"));
+});
+
