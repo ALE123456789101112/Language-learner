@@ -1,0 +1,16 @@
+// Function to filter languages based on hours of study
+function filterData(hours) {
+  if (hours < 48) {
+    setText("textOutput", "Nobody can learn a language in that amount of time silly ;)");
+  } else if (hours >= 48) {
+    languagesFilteredList = [];
+    for (var i = 0; i < languageList.length; i++) {
+      if (hourList[i] <= hours) {
+        appendItem(languagesFilteredList, languageList[i]);
+        setText("textOutput", "With " + hours + " hours of study, you can learn the following languages:\n" + languagesFilteredList.join("\n"));
+      }
+    }
+  } else {
+    setText("textOutput", "only put numbers!!!!!!");
+  }
+}
