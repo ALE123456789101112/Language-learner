@@ -1,0 +1,9 @@
+// Initialize language and hour lists from the data source
+var languageList = getColumn("languageData","languages");
+var hourList = getColumn("languageData","hours");
+var languagesFilteredList = [];
+
+// Event listener for starting the language screen
+onEvent("startButton", "click",function () {
+  setScreen("Languages");
+});
